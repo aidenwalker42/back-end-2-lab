@@ -10,7 +10,7 @@ module.exports = {
         
         //push an obj to the db.json and send the updated houses
         const { address, price, imageURL } = req.body; //linked up
-        let priceNum = parseInt(price); //convert price to a string
+        let priceNum = parseInt(price); //convert price to a numeric value
         let houseObj = {
             id: globalId,
             address,
